@@ -1,0 +1,16 @@
+config:
+  target: "https://github.com/farizdotid/DAFTAR-API-LOKAL-INDONESIA"
+
+scenarios:
+  - name: "Load Test Scenario"
+    flow:
+      - loop:
+          count: 10
+          delay: 2
+          flow:
+            - get:
+                url: "/api/endpoint"
+                headers:
+                  Content-Type: "application/json"
+                expect:
+                  statusCode: 200
