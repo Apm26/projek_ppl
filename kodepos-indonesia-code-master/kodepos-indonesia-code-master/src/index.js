@@ -8,3 +8,8 @@ import 'bulma/css/bulma.min.css';
 
 const mainView = new MainView();
 mainView.initSearchComponent();
+
+
+
+const value_plotting_codes = next();
+next = add.value();
